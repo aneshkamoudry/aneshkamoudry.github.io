@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aneshka Moudry</title>
 <meta name="description" content="Aneshka Moudry — PhD student in quantum algorithms at UCL and Phasecraft.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<div class="wrap">
   <nav>
     <a href="#top">Home</a>
     <a href="#research">Research</a>
@@ -16,72 +19,104 @@
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
   </nav>
-</header>
-<main id="top">
-  <h1>Aneshka Moudry</h1>
-  <p>I'm a PhD student in quantum computation at University College London, sponsored and supervised by <a href="https://phasecraft.io">Phasecraft</a>. I design quantum algorithms that simulate condensed matter physics and chemistry. Before that I read Chemistry at Oxford, where I finished 2nd in a cohort of 197 with first-class honours.</p>
-  <p>
-    <a href="mailto:aneshkamoudry@gmail.com">Email</a> ·
-    <a href="https://www.linkedin.com/in/aneshka-moudry/">LinkedIn</a> ·
-    <a href="https://github.com/aneshkamoudry">GitHub</a>
-  </p>
 
-  <h2 id="research">Research</h2>
-  <ul>
-    <li><strong>Quantum Algorithms Researcher, Phasecraft &amp; UCL</strong> <span class="meta">2025 – present</span><br>
-      Simulating quantum materials on quantum hardware: designing algorithms to approximate time dynamics and dynamical correlation functions. I run experiments on real quantum hardware and classical emulations, mostly in Julia and Python.
-      <ul>
-        <li>Decomposing classically computed matrix-product states into quantum circuits (with Prof. Andrew Green, Physics)</li>
-        <li>Neural network quantum states for classical simulation of quantum circuits (with Prof. Mehrnoosh Sadrzadeh, Computer Science)</li>
-      </ul>
-    </li>
-    <li><strong>Master's thesis, Kirrander Group, University of Oxford</strong> <span class="meta">Oct 2024 – Jul 2025</span><br>
-      <em>Theoretical excited-state dynamics of substituted molecular photoswitches</em> (publication in progress). I built an object-oriented Python framework to analyse over 2 TB of simulation data on an HPC cluster, with a clustering pipeline on top.
-    </li>
-  </ul>
+  <header id="top">
+    <h1>Aneshka Moudry</h1>
+    <p>I'm a PhD student in quantum computation at University College London, sponsored and supervised by <a href="https://phasecraft.io">Phasecraft</a>. I design quantum algorithms that simulate condensed matter physics and chemistry. Before that I read Chemistry at Oxford, finishing 2nd in a cohort of 197 with first-class honours.</p>
+    <p><a href="mailto:aneshkamoudry@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/aneshka-moudry/">LinkedIn</a> · <a href="https://github.com/aneshkamoudry">GitHub</a></p>
+  </header>
 
-  <h2 id="education">Education</h2>
-  <ul>
-    <li><strong>PhD, Quantum Computation &amp; Communications</strong>, University College London &amp; Phasecraft <span class="meta">2025 – 2029</span><br>
-      Modules: quantum many-body physics, tensor networks, quantum algorithms, computational complexity, quantum information theory, error mitigation and correction.</li>
-    <li><strong>MChem Chemistry</strong>, St Peter's College, University of Oxford <span class="meta">2021 – 2025</span><br>
-      First-class honours, average 83%, ranked 2/197. Thesis 80%, finals 85%.</li>
-  </ul>
+  <section id="research">
+    <h2>Research</h2>
+    <div>
+      <div class="item">
+        <h3>Quantum Algorithms Researcher, Phasecraft &amp; UCL</h3>
+        <p class="meta">2025 – present</p>
+        <p>Simulating quantum materials on quantum hardware: algorithms to approximate time dynamics and dynamical correlation functions, tested on real hardware and classical emulators, mostly in Julia and Python.</p>
+        <ul>
+          <li>Decomposing classically computed matrix-product states into quantum circuits, with Prof. Andrew Green</li>
+          <li>Neural network quantum states for classically simulating quantum circuits, with Prof. Mehrnoosh Sadrzadeh</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Master's thesis, Kirrander Group, University of Oxford</h3>
+        <p class="meta">Oct 2024 – Jul 2025</p>
+        <p><em>Theoretical excited-state dynamics of substituted molecular photoswitches</em> (publication in progress). Built a Python framework to analyse over 2 TB of simulation data on an HPC cluster.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Prizes</h2>
-  <ul>
-    <li>Thesis Prize in Theoretical and Physical Chemistry, University of Oxford <span class="meta">2025</span></li>
-    <li>Gibbs Prize in Chemistry, University of Oxford <span class="meta">2024</span></li>
-    <li>Shimadzu Prize in Chemistry (practical work), University of Oxford <span class="meta">2024</span></li>
-    <li>Domus Scholarship and Bailey Scholarship, University of Oxford <span class="meta">2022</span></li>
-  </ul>
+  <section id="education">
+    <h2>Education</h2>
+    <div>
+      <div class="item">
+        <h3>PhD, Quantum Computation &amp; Communications</h3>
+        <p class="meta">UCL &amp; Phasecraft · 2025 – 2029</p>
+        <p>Quantum many-body physics, tensor networks, quantum algorithms, complexity, error mitigation and correction.</p>
+      </div>
+      <div class="item">
+        <h3>MChem Chemistry</h3>
+        <p class="meta">St Peter's College, University of Oxford · 2021 – 2025</p>
+        <p>First-class honours, average 83%, ranked 2/197.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2 id="experience">Other experience</h2>
-  <ul>
-    <li><strong>Private tutor</strong> <span class="meta">2023 – present</span><br>
-      Maths, physics, chemistry and biology to over 50 A-level and GCSE students, in person and online.</li>
-    <li><strong>Global Markets Trading Summer Intern, Bank of America</strong> <span class="meta">Jun – Sep 2024</span><br>
-      Developed quantitative strategies for algorithmic options trading and applied interpretable machine learning to incomplete time series.</li>
-    <li><strong>Venture Capital Intern, Future Planet Capital</strong> <span class="meta">Aug 2023 – Mar 2024</span><br>
-      Scientific due diligence on deep tech companies. Wrote investment memos on two startups, won best pitch and was picked as top intern of 25.</li>
-    <li><strong>Divisional Representative (Maths, Physical and Life Sciences), Oxford SU</strong> <span class="meta">2023</span><br>
-      Represented 2,600+ undergraduates at university boards.</li>
-    <li><strong>Data Scientist, Oxford Digital Strategy Group</strong> <span class="meta">Apr – Jul 2022</span></li>
-  </ul>
+  <section>
+    <h2>Prizes</h2>
+    <ul class="plain">
+      <li>Thesis Prize in Theoretical and Physical Chemistry, Oxford, 2025</li>
+      <li>Gibbs Prize in Chemistry, Oxford, 2024</li>
+      <li>Shimadzu Prize in Chemistry, Oxford, 2024</li>
+      <li>Domus and Bailey Scholarships, Oxford, 2022</li>
+    </ul>
+  </section>
 
-  <h2 id="skills">Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Python (NumPy, pandas, SciPy, scikit-learn), Julia, Fortran, MATLAB, Bash, LaTeX</li>
-    <li><strong>Tools:</strong> Git/GitHub, Linux, HPC clusters</li>
-    <li><strong>Research:</strong> quantum algorithms, tensor networks, condensed matter simulation, quantum chemistry, ML for large datasets</li>
-    <li><strong>Spoken:</strong> English (native), Czech (fluent), German (intermediate), Spanish (elementary)</li>
-  </ul>
+  <section id="experience">
+    <h2>Other experience</h2>
+    <div>
+      <div class="item">
+        <h3>Global Markets Trading Summer Intern, Bank of America</h3>
+        <p class="meta">Jun – Sep 2024</p>
+        <p>Developed quantitative strategies for algorithmic options trading using interpretable machine learning.</p>
+      </div>
+      <div class="item">
+        <h3>Venture Capital Intern, Future Planet Capital</h3>
+        <p class="meta">Aug 2023 – Mar 2024</p>
+        <p>Scientific due diligence on deep tech startups. Top intern of 25.</p>
+      </div>
+      <div class="item">
+        <h3>Private tutor</h3>
+        <p class="meta">2023 – present</p>
+        <p>Maths and sciences to over 50 A-level and GCSE students.</p>
+      </div>
+      <div class="item">
+        <h3>Oxford SU Divisional Representative</h3>
+        <p class="meta">2023</p>
+        <p>Represented 2,600+ undergraduates at university boards.</p>
+      </div>
+      <div class="item">
+        <h3>Data Scientist, Oxford Digital Strategy Group</h3>
+        <p class="meta">Apr – Jul 2022</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Writing</h2>
-  <ul>
-    <li><a href="https://oxsci.org/antarctica-polluted-with-microplastics/">'Pristine' continent of Antarctica found to be ubiquitously polluted with microplastics</a> <span class="meta">The Oxford Scientist, 2022</span></li>
-  </ul>
-</main>
-<footer>© 2026 Aneshka Moudry</footer>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div>
+      <div class="item"><h3>Programming</h3><p>Python (NumPy, pandas, SciPy, scikit-learn), Julia, Fortran, MATLAB, Bash, LaTeX</p></div>
+      <div class="item"><h3>Tools</h3><p>Git/GitHub, Linux, HPC clusters</p></div>
+      <div class="item"><h3>Languages</h3><p>English (native), Czech (fluent), German (intermediate), Spanish (elementary)</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <p><a href="https://oxsci.org/antarctica-polluted-with-microplastics/">'Pristine' continent of Antarctica found to be ubiquitously polluted with microplastics</a>, The Oxford Scientist, 2022</p>
+  </section>
+
+  <footer>© 2026 Aneshka Moudry</footer>
+</div>
 </body>
 </html>
